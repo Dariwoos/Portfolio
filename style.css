@@ -268,7 +268,6 @@ header{
 
 .my-services{
     background-color: var(--clr-dark);
-    background-image: url(../img/back.jpeg);
     background-size: cover;
     background-blend-mode:multiply;
     color: var(--clr-light);
@@ -294,7 +293,7 @@ header{
 }
 
 .service{
-    max-width: 500px;
+    max-width: 250px;
     margin:  auto;
 }
 
@@ -305,7 +304,7 @@ header{
         margin-left: auto;
         margin-right: auto;
     }
-    .service + .service +.service{
+    .service + .service {
         margin-left: 2em;
     }
 }
@@ -367,13 +366,15 @@ header{
     background: var(--clr-accent);
     overflow: hidden;
 
+
 }
 
 .portfolio__img{
     transition: 
     transform 750ms cubic-bezier(.5 , 0 , .5 , 1 );
     opacity:inherit 250ms liner;
-
+    width: 100%;
+    height: 100%;
 } 
 
 
@@ -430,4 +431,10 @@ header{
     padding: 0 2em 2em;
     max-width: 1000px;
     margin: 0 auto;
+}
+.about-me__link{
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-bold);
+    color:var(--clr-accent);
+    text-decoration: none;
 }
